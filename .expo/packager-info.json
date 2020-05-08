@@ -2,8 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 69421,
+  "packagerPid": 16143,
   "expoServerNgrokUrl": "https://hb-cqz.pcolella.rn-starter.exp.direct",
   "packagerNgrokUrl": "https://packager.hb-cqz.pcolella.rn-starter.exp.direct",
-  "ngrokPid": 69435
+  "ngrokPid": 16153,
+  "webpackServerPort": null
 }
