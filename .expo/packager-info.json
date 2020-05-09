@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 18478,
+  "expoServerNgrokUrl": "https://hb-cqz.pcolella.rn-starter.exp.direct",
+  "packagerNgrokUrl": "https://packager.hb-cqz.pcolella.rn-starter.exp.direct",
+  "ngrokPid": 18527,
   "webpackServerPort": null
 }
