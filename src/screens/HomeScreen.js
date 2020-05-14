@@ -1,9 +1,6 @@
 import React from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
-
-const Separator = () => {
-  return <View style={styles.separator}></View>;
-};
+import Separator from '../components/Separator';
 
 const HomeScreen = ({ navigation }) => {
   return (
@@ -22,6 +19,16 @@ const HomeScreen = ({ navigation }) => {
       <Button
         onPress={() => navigation.navigate('Images')}
         title="Go to Images Demo"
+      />
+      <Separator />
+      <Button
+        onPress={() => navigation.navigate('Counter')}
+        title="Go to Counter"
+      />
+      <Separator />
+      <Button
+        onPress={() => navigation.navigate('Color')}
+        title="Go to Color Screen"
       />
       {/* <TouchableOpacity onPress={() => navigation.navigate('List')}>
         <Text>Go to List Demo</Text>
