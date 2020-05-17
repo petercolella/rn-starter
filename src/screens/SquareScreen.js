@@ -5,21 +5,21 @@ import Separator from '../components/Separator';
 
 const COLOR_INCREMENT = 20;
 
+const correctColor = (state, colorKey, change) => {
+  const newColor = state[colorKey] + change;
+  const correctedColor = newColor > 255 ? 255 : newColor < 0 ? 0 : newColor;
+  return correctedColor;
+};
+
 const reducer = (state, action) => {
   const change = COLOR_INCREMENT * action.payload;
   switch (action.type) {
     case 'change_red':
-      const newRed = state.red + change;
-      const correctedRed = newRed > 255 ? 255 : newRed < 0 ? 0 : newRed;
-      return { ...state, red: correctedRed };
+      return { ...state, red: correctColor(state, 'red', change) };
     case 'change_green':
-      const newGreen = state.green + change;
-      const correctedGreen = newGreen > 255 ? 255 : newGreen < 0 ? 0 : newGreen;
-      return { ...state, green: correctedGreen };
+      return { ...state, green: correctColor(state, 'green', change) };
     case 'change_blue':
-      const newBlue = state.blue + change;
-      const correctedBlue = newBlue > 255 ? 255 : newBlue < 0 ? 0 : newBlue;
-      return { ...state, blue: correctedBlue };
+      return { ...state, blue: correctColor(state, 'blue', change) };
     default:
       return state;
   }
