@@ -3,12 +3,39 @@ import { Text, View, StyleSheet, StatusBar } from 'react-native';
 
 const BoxScreen = () => {
   return (
-    <View>
-      <Text>This is the Box Screen</Text>
+    <View style={styles.viewStyle}>
+      <Text style={styles.textOneStyle}>Child #1</Text>
+      <Text style={styles.textTwoStyle}>Child #2</Text>
+      <Text style={styles.textThreeStyle}>Child #3</Text>
     </View>
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  viewStyle: {
+    borderWidth: 3,
+    borderColor: 'black',
+    alignItems: 'center',
+    // flexDirection: 'row',
+    // justifyContent: 'center',
+    height: 200
+  },
+  textOneStyle: {
+    borderWidth: 3,
+    borderColor: 'red'
+    // flex: 4
+  },
+  textTwoStyle: {
+    borderWidth: 3,
+    borderColor: 'red',
+    // flex: 4,
+    alignSelf: 'stretch'
+  },
+  textThreeStyle: {
+    borderWidth: 3,
+    borderColor: 'red'
+    // flex: 2
+  }
+});
 
 export default BoxScreen;
