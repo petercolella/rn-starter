@@ -3,38 +3,51 @@ import { Text, View, StyleSheet, StatusBar } from 'react-native';
 
 const BoxScreen = () => {
   return (
-    <View style={styles.viewStyle}>
-      <Text style={styles.textOneStyle}>Child #1</Text>
-      <Text style={styles.textTwoStyle}>Child #2</Text>
-      <Text style={styles.textThreeStyle}>Child #3</Text>
+    <View style={styles.containerStyle}>
+      <View style={styles.viewOneStyle} />
+      <View style={styles.viewTwoStyle} />
+      <View style={styles.viewThreeStyle} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  viewStyle: {
-    borderWidth: 3,
-    borderColor: 'black',
-    alignItems: 'center',
-    // flexDirection: 'row',
-    // justifyContent: 'center',
-    height: 200
+  containerStyle: {
+    // alignItems: 'center',
+    // borderColor: 'black',
+    // borderWidth: 3,
+    flexDirection: 'row',
+    height: 200,
+    justifyContent: 'space-between'
   },
-  textOneStyle: {
-    borderWidth: 3,
-    borderColor: 'red'
-    // flex: 4
-  },
-  textTwoStyle: {
-    borderWidth: 3,
-    borderColor: 'red',
+  viewOneStyle: {
     // flex: 4,
-    alignSelf: 'stretch'
-  },
-  textThreeStyle: {
+    backgroundColor: 'lightsalmon',
+    borderColor: 'salmon',
     borderWidth: 3,
-    borderColor: 'red'
+    height: 100,
+    width: '25%'
+  },
+  viewTwoStyle: {
+    // alignSelf: 'stretch',
+    // flex: 4,
+    // fontSize: 18,
+    // position: 'absolute',
+    backgroundColor: 'lightgreen',
+    borderColor: 'green',
+    borderWidth: 3,
+    height: 100,
+    top: 100,
+    width: '25%'
+    // ...StyleSheet.absoluteFillObject
+  },
+  viewThreeStyle: {
     // flex: 2
+    backgroundColor: 'plum',
+    borderColor: 'purple',
+    borderWidth: 3,
+    height: 100,
+    width: '25%'
   }
 });
 
