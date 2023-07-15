@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
-    "expo": "^38.0.0",
+    "expo": "^49.0.3",
     "logkitty": "^0.7.1",
     "react": "16.11.0",
     "react-dom": "16.11.0",
@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
-    "babel-preset-expo": "^8.2.3"
+    "babel-preset-expo": "^9.5.0"
   },
   "private": true
 }
